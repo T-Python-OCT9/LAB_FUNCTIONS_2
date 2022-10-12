@@ -12,6 +12,8 @@ def ascending(first_number: int, second_number: int) -> None:
             while second_number > first_number:
                 print(first_number)
                 first_number += 1
+        else: 
+            print("The first number is greater than second number")
     else:
         print("The numbers should be negative")
 
