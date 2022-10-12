@@ -6,6 +6,7 @@ x= int(input("type the first number, should be negative number"))
 y= int(input("type the seconf, should be negative number"))
 
 def fun (x:int , y:int)->int:
+    
     if x < 0 and y < 0:
         if (x < y):
             print(x,y)
@@ -16,4 +17,4 @@ def fun (x:int , y:int)->int:
         
 
 
-print (fun(x,y))
+print(fun(x,y))
