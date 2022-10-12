@@ -7,11 +7,6 @@ Using a loop Print all the numbers bettween the smaller int up to the bigger int
 
 
 def ascending(first_number: int, second_number: int) -> None:
-
-    # Note: Ask the user for the 2 numbers. (use input)
-    first_number = int(input('Insert First Number: '))
-    second_number = int(input('Insert second Number: '))
-
     if first_number and second_number < 0:
         if first_number < second_number:
             while second_number > first_number:
@@ -21,4 +16,7 @@ def ascending(first_number: int, second_number: int) -> None:
         print("The numbers should be negative")
 
 
-ascending(-12, -4)
+# Note: Ask the user for the 2 numbers. (use input)
+first_input: int = int(input('Insert First Number: '))
+second_input: int = int(input('Insert second Number: '))
+ascending(first_input, second_input)
