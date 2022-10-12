@@ -4,7 +4,8 @@ def function(num : int , num2 : int):
         if num < num2:
             print("first parameter is smaller than the second parameter")
             for i in range(num,num2+1,1):
-                print(i)
+                print(i , end=".")
+                print()
         else:
             print("first parameter is not smaller")
 
