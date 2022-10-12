@@ -6,15 +6,13 @@ x= int(input("type the first number, should be negative number"))
 y= int(input("type the seconf, should be negative number"))
 
 def fun (x:int , y:int)->int:
-    
-    if x < 0 and y < 0:
+    if (x < 0 and y < 0):
         if (x < y):
-            print(x,y)
-        elif (x>y):
-           Break
+            for i in range (x,y+1):
+              print(i,".")
+        else:
+              print("the number is smaller than the second num")  
     else:
-        print("The numbers should be negative")
+          print("The numbers should be negative")
         
-
-
-print(fun(x,y))
+fun(x,y)
