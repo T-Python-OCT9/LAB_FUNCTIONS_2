@@ -1,10 +1,10 @@
-def check_negative(x: int, y: int):
-    if x >= 0 and y >= 0 or x > y:
-        print("The numbers should be negative")
+def check_negative(x: int, y: int) -> int:
+    if x < 0 and y < 0:
+        if x < y:
+            for i in range(x, y + 1):
+                print(i, ".")
     else:
-        for i in range(x, y):
-            if i > 0:
-                print(i)
+        print("The numbers should be negative")
 
 
 x = int(input("please inter the num 1 ="))
